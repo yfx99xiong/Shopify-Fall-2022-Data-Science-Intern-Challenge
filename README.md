@@ -53,7 +53,7 @@ WHERE ShipperName = 'Speedy Express';
 ```
 Answer:\
 CNT\
-54\
+54
 
 
 ##### 2. What is the last name of the employee with the most orders?
@@ -95,7 +95,7 @@ GROUP BY pt.ProductID
 ORDER BY SUM(Quantity) DESC
 LIMIT 1;
 ```
-Answer:\n
+Answer:\
 MostProduct\
 Boston Crab Meat
 
