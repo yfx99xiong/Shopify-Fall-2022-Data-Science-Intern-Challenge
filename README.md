@@ -7,7 +7,7 @@ Given some sample data, write a program to answer the following: [click here to 
 
 ##### 1. Think about what could be going wrong with our calculation. Think about a better way to evaluate this data. 
 
-Answer: 
+Answer: \
 The wrong calculation is caused by taking average vaule of 'order_amount' column. The 'total_items' column also is needed to consider when calculating the overall average of order value.  
 
 ```
@@ -18,7 +18,7 @@ The wrong average order value (AOV): 3145.13
 
 ##### 2. What metric would you report for this dataset?
 
-Answer: 
+Answer: \
 The sum value of 'order_amount' column and the sum of 'total_items' column since the AOV = (Sum of total order amout)/(Sum of total order value).
 
 ```
@@ -28,7 +28,7 @@ total_items = df['total_items'].sum()
 
 ##### 3. What is its value?
 
-Answer: 
+Answer: \
 The AOV vaule is 357.92.
 (The total number of order amount: 15725640; The total number of item: 43936)
 
