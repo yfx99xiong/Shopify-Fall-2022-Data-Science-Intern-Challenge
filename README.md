@@ -27,7 +27,19 @@ For this question you’ll need to use SQL. [Follow this link](https://www.w3sch
 
 ##### 1. How many orders were shipped by Speedy Express in total?
 
-Answer: 54
+-- Using ShipperName = 'Speedy Express' in Shippers table 
+-- to select OrderID in Orders table 
+-- then count the OrderID 
+	
+SELECT COUNT(DISTINCT OrderID) AS CNT FROM Orders AS o
+JOIN Shippers AS s 
+ON o.ShipperID = s.ShipperID 
+WHERE ShipperName = 'Speedy Express';
+
+-- Answer:
+-- CNT
+-- 54
+
 
 ##### 2. What is the last name of the employee with the most orders?
 
